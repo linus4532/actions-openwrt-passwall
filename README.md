@@ -14,10 +14,7 @@
   `https://tmate.io/t/Y26QeagDtsPXp2mT6me5cnMRd`     
   ***
 - 复制 SSH 连接命令粘贴到终端内执行，或者复制链接在浏览器中打开使用网页终端，登陆云menuconfig。
-- 命令:git clone https://github.com/rufengsuixing/luci-app-adguardhome
-      git clone https://github.com/pymumu/smartdns
-      git clone https://github.com/pymumu/luci-app-smartdns
-      cd openwrt && make menuconfig
+- 命令:cd openwrt && cd package && mkdir openwrt-packages && cd openwrt-packages && git clone https://github.com/rufengsuixing/luci-app-adguardhome && git clone https://github.com/pymumu/smartdns && git clone https://github.com/pymumu/luci-app-smartdns && cd ../.. && make menuconfig
 - 新手参考[OpenWrt MenuConfig设置和LuCI插件选项说明](https://mtom.ml/827.html)   
 - 完成后按快捷键`Ctrl+D`或执行`exit`命令退出，后续编译工作将自动进行。
 - 这样比较灵活，可以根据路由器硬件通过云`menuconfig`自定义配置固件，不需要再导出`.config`和上传
